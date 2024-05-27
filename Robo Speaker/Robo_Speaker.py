@@ -7,6 +7,7 @@ print("=================================================")
 while True:
     text = input("\nEnter what you want to say: ")
     if text.lower() in ["quit", "exit"]:
+        os.system("spd-say 'Bye Bye Batman'")
         break
 
     command = f"spd-say '{text}'"
